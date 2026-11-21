@@ -23,9 +23,9 @@
     --color-font-secondary: #ffffff;
     --color-font-accent1: #F8D057;
 /*Variablen aller Schriften der Webseite*/
-    --font-primary: "Banana";
-    --font-secondary:"BalooBhaijaan";
-    --font-fliesstext:"Baloo2";
+    --font-primary: "Banana",Arial, sans-serif;
+    --font-secondary:"BalooBhaijaan",Arial, sans-serif;
+    --font-fliesstext:"Baloo2",Arial, sans-serif;
 /*Allgemeine Variablen*/
     --globalmaxwidth: 80vw;
     --globalborderadius: 25px;
@@ -38,16 +38,16 @@
 }
 
 h1{
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), Arial, sans-serif;
     color: var(--color-font-secondary);
     font-size: 12vw;
 }
 h2{
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary), Arial, sans-serif;
     font-size: 5em;
 }
 h3{
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), Arial, sans-serif;
     font-size: 2em;
     color: var(--color-font-accent1);
 }
@@ -65,7 +65,7 @@ button{
     border: none;
     border-radius: calc(var(--globalborderadius) - 10px);
     padding: 1vw 5vw;
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), Arial, sans-serif;
     color: var(--color-font-secondary);
     font-size: 2em;
 }
@@ -79,7 +79,7 @@ button:hover{
 body{
     background-color: var(--color-primary);
     color: var(--color-font-primary);
-    font-family: var(--font-fliesstext);
+    font-family: var(--font-fliesstext), Arial, sans-serif;
     overflow-x: hidden;
 }
 
@@ -98,13 +98,16 @@ header{
 #header-home{
     background-image: url("../img/headerimg/headerimg-home.jpg");
 }
+#header-rezepte{
+    background-image: url("../img/headerimg/headerimg-rezepte.jpg");
+}
 
 /*Header Navigation */
 
 .topnavigation{
     background-color: var(--color-secondary);
     border-radius: var(--globalborderadius);
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), Arial, sans-serif;
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -191,7 +194,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1vw 0 1vw 0;
+    padding: 1vw 0 5vw 0;
         p{
             text-align: center;
             font-size: 2em;
@@ -209,17 +212,16 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0vw;
-    padding: 5vw 0 5vw 0;
+    padding: 8vw 0 8vw 0;
         p{
             font-size: 6em;
-            font-family: var(--font-secondary);
+            font-family: var(--font-secondary), Arial, sans-serif;
         }
 }
 /*Home-Site Section Bananaforest Sound*/
 .bananaforest-home{
     display: flex;
-    padding: 10vw 0 10vw 0;
+    padding: 14vw 0 14vw 0;
     background-image: url("../img/home/banana-forest.jpg");
     background-size: 100vw;
     font-size: 0.5em;
@@ -239,7 +241,7 @@ footer{
     position: relative;
     width: 100vw;
     margin: 0;
-    padding: 0;
+    padding-top: 8vw;
         .footerimg{
             width: 100%;
             height: auto;
@@ -263,7 +265,7 @@ footer{
                     a{
                     text-decoration: none;
                     color: var(--color-font-primary);
-                    font-family: var(--font-primary);
+                    font-family: var(--font-primary), Arial, sans-serif;
                     font-size: 1.2em;
                     }
                     :hover{
