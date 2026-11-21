@@ -216,4 +216,17 @@ header{
             font-family: var(--font-secondary);
         }
 }
-
+/*Home-Site Section Bananaforest Sound*/
+.bananaforest-home{
+    display: flex;
+    padding: 10vw 0 10vw 0;
+    background-image: url("../img/home/banana-forest.jpg");
+    background-size: 100vw;
+    font-size: 0.5em;
+    color: var(--color-font-secondary);
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+    margin: 0 auto;
+}
