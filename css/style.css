@@ -233,6 +233,58 @@ header{
     margin: 0 auto;
 }
 
+/*Home-Site Bananenbaumm Beschreibung*/
+
+.bananenbaumbeschreibung{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 10vw 0;
+    max-width: var(--globalmaxwidth);
+        h2{
+            font-family: var(--font-primary), Arial, sans-serif;
+            color: var(--color-font-secondary);
+            font-size: 10em;
+        }
+        p{
+            width: 50%;
+        }
+        img{
+            position: absolute;
+            z-index: 2;
+            width: 600px;
+            right: -20%;
+            bottom: 0;
+        }
+}
+
+/*Home-Site Taeglich gegessene Bananen*/
+
+.rezeptehome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8vw 0 8vw 0;
+        p{
+            font-size: 6em;
+            font-family: var(--font-secondary), Arial, sans-serif;
+        }
+    button{
+        margin-top: 2%;
+    }
+}
+/*Home-Site Bananenquiz*/
+
+
+
+
+
+
+
+
 
 
 /*Footer*/
