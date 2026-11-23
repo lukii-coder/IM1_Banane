@@ -60,7 +60,8 @@ h3{
     color: var(--color-font-secondary);
 }
 /*Allgemeines Styling der Buttons*/
-button{
+button,
+.submitform{
     background-color: var(--color-accent1);
     border: none;
     border-radius: calc(var(--globalborderadius) - 10px);
@@ -70,7 +71,8 @@ button{
     font-size: 2em;
 }
 
-button:hover{
+button:hover,
+.submitform:hover{
     color: var(--color-font-accent1);
     cursor: pointer;
 }
@@ -277,6 +279,87 @@ header{
     }
 }
 /*Home-Site Bananenquiz*/
+
+.bananenquiz{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 5vw;
+    max-width: var(--globalmaxwidth);
+        h2{
+            font-family: var(--font-primary), Arial, sans-serif;
+            color: var(--color-font-secondary);
+            font-size: 6em;
+            padding-bottom: 3vw;
+        }
+        .quizelements{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 5vw;
+                .quizform{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 1vw 0;
+                            font-size: 2em;
+                                .forminput{
+                                    transform: scale(3);
+                                    margin: 2vw;
+                                }
+                                .submitform{
+                                    font-size: 1em;
+                                }
+                        }
+                        p{
+                            font-family: var(--font-secondary), Arial, sans-serif;
+                            font-size: 2em;
+                        }
+                }
+        }
+        img{
+            width: 50%;
+            border: black solid 2px;
+            border-radius: var(--globalborderadius);
+        }
+}
+/*Rezepte-Site Rezept Artikel Grid*/
+.bananenrezepte{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: var(--globalmaxwidth);
+    margin: 5vw auto;
+    gap: 5vw;
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: black solid 2px;
+            border-radius: var(--globalborderadius);
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 4vw;
+                }
+                img{
+                    width: 100%;
+                    border-radius: var(--globalborderadius) var(--globalborderadius) 0 0;
+                }
+                h2{
+                    margin-top: -5vh;
+                    font-family: var(--font-primary), Arial, sans-serif;
+                    color: var(--color-font-secondary);
+                }
+
+        }
+}
 
 
 
