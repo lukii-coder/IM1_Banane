@@ -31,10 +31,23 @@
     --globalborderadius: 25px;
 }
 
+[data-theme="dark"]{
+    /*Variablen aller Farben der Webseite - WhiteMode*/
+    --color-primary: #aa933f;
+    --color-secondary: #402306;
+    --color-accent1: #25414c;
+    --color-font-primary: #e1e1e1;
+    --color-font-secondary: #dcdcdc;
+    --color-font-accent1: #55491f;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+
 }
 
 h1{
@@ -82,6 +95,7 @@ body{
     background-color: var(--color-primary);
     color: var(--color-font-primary);
     font-family: var(--font-fliesstext), Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
     overflow-x: hidden;
 }
 
@@ -154,11 +168,14 @@ header{
 
 .dark-white-switch{
     width: 30px;
+    background-color: transparent;
     img{
         width: 30px;
         margin: 0;
+        opacity: 100%;
     }
 }
+
 
 .down-arrow{
     margin: 20px;

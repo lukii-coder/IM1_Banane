@@ -29,7 +29,7 @@ const countdown = setInterval(() => {
 
 
 
-// Aendert den Button beim blicken auf der Home Seite und startet / pausiert die Musik
+// Aendert den Button beim klicken auf der Home Seite und startet / pausiert die Musik
 var toggle = true
 const track = new Audio("../audio/bananforest.mp3");
 function changeimg() {
@@ -43,3 +43,6 @@ if (toggle === true){
 }
 toggle = !toggle
 }
+
+
+
